@@ -1,11 +1,14 @@
 import {handleActions} from 'redux-actions';
-import {fooStoreModel} from '../constants/fooStoreModel';
+import {FoodStoreState} from '../constants/foodStoreModel';
 
-const foodStoreReducer = handleActions({
+export const foodStoreReducer = handleActions({
     'loadStores': (state, {payload}) => {
         state.set('foodStores', payload.foodStores)
-    }
+    },
     'focusStore': (state, {payload}) => {
-        state.merge({ 'foodStore': payload })
+        console.log(state);
+        console.log(payload);
+        console.log(state.merge({'foodStore': payload}))
+        return state.merge({'foodStore': payload})
     }
-})
+}, FoodStoreState);

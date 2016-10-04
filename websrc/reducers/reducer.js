@@ -1,5 +1,7 @@
-import { combineReducers } from 'redux';
-import foodStoreReducer from 'foodStoreReducer'
-export default combineReducers({
+import { combineReducers } from 'redux-immutable';
+import {foodStoreReducer} from './foodStoreReducer';
+
+
+export const mainReducer =  combineReducers({
   foodStoreReducer
 });
