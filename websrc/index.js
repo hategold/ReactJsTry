@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
-import Main from './components/Main';
-import {PrototypeFS} from './staticFoodStore'
+import Main from './pages/Main';
+import {PrototypeFS} from './pages/staticFoodStore'
 import store from './store';
 import {Router, Route, hashHistory} from 'react-router'
 
