@@ -1,5 +1,6 @@
 import {handleActions} from 'redux-actions';
-import {FoodStoreState} from '../constants/foodStoreModel';
+import {FoodStoreState} from '../constants/models/FoodStoreModel';
+
 
 export const foodStoreReducer = handleActions({
     'loadStores': (state, {payload}) => {

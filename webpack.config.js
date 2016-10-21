@@ -32,6 +32,7 @@ module.exports = {
   },
   // devServer 則是 webpack-dev-server 設定
   devServer: {
+    historyApiFallback: true,
     inline: true,
     port: 8008,
   },

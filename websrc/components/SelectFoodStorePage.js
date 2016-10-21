@@ -15,7 +15,7 @@ var SelectFoodStorePage = React.createClass({
       <div>
         <HeaderBar />
         <ToolBar />
-        <ProgressBar/>
+        <ProgressBar stepIndex={1}/>
         <StoreTable foodStores={this.props.foodStores} />
       </div>
     );
